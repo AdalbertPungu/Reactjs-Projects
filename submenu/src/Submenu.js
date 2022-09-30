@@ -21,6 +21,25 @@ const Submenu = () => {
 		}
 	}, [location, links])
 
+	return (
+		<aside
+			className={`${isSubmenuOpen ? 'submenu show' : 'submenu'}`}
+			ref={container}
+		>
+			<h4>{page}</h4>
+			<div className={`submenu-center ${columns}`}>
+				{links.map((link, index) => {
+					const { label, icon, url } = link
+					return (
+						<a key={index} href={url}>
+							{icon}
+							{label}
+						</a>
+					)
+				})}
+			</div>
+		</aside>
+	)
 }
 
 export default Submenu
