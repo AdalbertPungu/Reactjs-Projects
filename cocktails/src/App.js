@@ -10,8 +10,8 @@ import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <Router>
-      <Navbar />
+		<Router>
+			<Navbar />
 			<Switch>
 				<Route exact path="/">
 					<Home />
@@ -26,8 +26,8 @@ function App() {
 					<Error />
 				</Route>
 			</Switch>
-    </Router>
-  )
+		</Router>
+	)
 }
 
 export default App
