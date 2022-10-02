@@ -1,3 +1,5 @@
+import '../styles/Banner.css'
+
 function Banner() {
 	return (
 		<div className='lmj-banner'>
