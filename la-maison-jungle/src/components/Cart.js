@@ -6,11 +6,11 @@ function Cart() {
 		<div>
 			<h2>Panier</h2>
 			<ul>
-				<li>Monstera : {monsteraPrice}€</li>
-				<li>Lierre : {ivyPrice}€</li>
-				<li>Fleurs : {flowerPrice}€</li>
+				<li>Monstera : { monsteraPrice } €</li>
+				<li>Lierre : { ivyPrice } €</li>
+				<li>Fleurs : { flowerPrice } €</li>
 			</ul>
-			Total : {monsteraPrice + ivyPrice + flowerPrice}€
+			Total : { monsteraPrice + ivyPrice + flowerPrice } €
 		</div>
 	)
 }
