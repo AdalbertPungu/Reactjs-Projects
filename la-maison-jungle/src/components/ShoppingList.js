@@ -1,4 +1,4 @@
-import { plantList } from '../datas/plantList'
+import { plantList } from '../data/plantList'
 import '../styles/ShoppingList.css'
 
 function ShoppingList() {
