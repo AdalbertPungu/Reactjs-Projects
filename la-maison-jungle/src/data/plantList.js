@@ -13,6 +13,7 @@ export const plantList = [
 		name: 'monstera',
 		category: 'classique',
 		id: '1ed',
+		bestSale: true,
 		light: 2,
 		water: 3,
 		cover: monstera,
@@ -27,7 +28,6 @@ export const plantList = [
 		cover: lyrata,
 		price: 16
 	},
-
 	{
 		name: 'pothos argenté',
 		category: 'classique',
@@ -44,7 +44,6 @@ export const plantList = [
 		light: 2,
 		water: 3,
 		cover: calathea,
-
 		price: 20
 	},
 	{
@@ -56,7 +55,6 @@ export const plantList = [
 		cover: olivier,
 		price: 25
 	},
-
 	{
 		name: 'cactus',
 		category: 'plante grasse',
@@ -70,6 +68,7 @@ export const plantList = [
 		name: 'basilique',
 		category: 'extérieur',
 		id: '7ie',
+		bestSale: true,
 		light: 2,
 		water: 3,
 		cover: basil,
@@ -84,7 +83,6 @@ export const plantList = [
 		cover: succulent,
 		price: 8
 	},
-
 	{
 		name: 'menthe',
 		category: 'extérieur',
