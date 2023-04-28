@@ -6,7 +6,6 @@ const Review = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
   
-	// Verifie le nombre de personnes dans le tableau people
 	const checkNumber = (number) => {
     if (number > people.length - 1) {
       return 0;
@@ -16,25 +15,22 @@ const Review = () => {
     }
     return number;
   };
-
-	// Fonction qui permet de passer à la personne suivante
-  const nextPerson = () => {
+  
+	const nextPerson = () => {
     setIndex((index) => {
       let newIndex = index + 1;
       return checkNumber(newIndex);
     });
   };
-
-	// Fonction qui permet de passer à la personne précédente
-  const prevPerson = () => {
+  
+	const prevPerson = () => {
     setIndex((index) => {
       let newIndex = index - 1;
       return checkNumber(newIndex);
     });
   };
-
-	// Fonction qui permet de choisir une personne aléatoirement
-  const randomPerson = () => {
+  
+	const randomPerson = () => {
     let randomNumber = Math.floor(Math.random() * people.length);
     if (randomNumber === index) {
       randomNumber = index + 1;
@@ -51,8 +47,8 @@ const Review = () => {
           <FaQuoteRight />
         </span>
       </div>
-      
-			<h4 className='author'>{name}</h4>
+
+      <h4 className='author'>{name}</h4>
       <p className='job'>{job}</p>
       <p className='info'>{text}</p>
       
