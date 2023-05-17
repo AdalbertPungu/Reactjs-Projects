@@ -3,7 +3,14 @@ import items from './components/data'
 
 const App = () => {
 	return (
-		<div>App</div>
+		<main>
+      <section className="menu section">
+        <div className="title">
+          <h2>our menu</h2>
+          <div className="underline"></div>
+        </div>
+      </section>
+    </main>
 	)
 }
 
